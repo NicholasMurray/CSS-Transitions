@@ -27,7 +27,7 @@ article{
     border:1px solid #878787;
     transition:height 1s;
 }
-article.live{opacity:1;width:400px;height:150px;transition:all 2s;}
+article.live{opacity:1;width:400px;height:200px;transition:all 2s;}
 article.live:hover{height:270px;transition:all 1s;}
 article.full{z-index:1;left:0;width:915px;opacity:1;height:350px;transition:all 4s;} 
 article.gone{opacity:0;transition:all 1s;}
