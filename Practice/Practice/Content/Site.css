@@ -1,75 +1,36 @@
-body
-{
-    font-size: .85em;
-    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
+/* 
+** HTML css shiv/fix 
+*/
+article, header, section{display: block;}
+
+html{font-size:100%;text-size-adjust:100%;background-color:#f0f0f0;font-family:Tahoma;font-style:italic;color:#878787;}
+
+body{margin:0;padding:0;height:700px;}
+
+header{height:40px;background-color:#fbfbfb;border-bottom:2px solid #878787;}
+    header h1{width:960px;margin:0 auto;font-weight:normal;padding-top:1px;}
+
+section{width:1360px;margin:0 auto;position:relative;}
+    section div{float:left;width:440px;}
+
+article{
+    height:200px;
+    z-index:0;
+    position:relative;
+    overflow:hidden;
+    /*opacity:0;*/
+    margin:10px;
+    padding:10px;
+    float:left;
+    border-radius:10px;
+    background-color:#fbfbfb;
+    border:1px solid #878787;
+    transition:height 1s;
 }
-
-header,
-footer,
-nav,
-section {
-    display: block;
-}
-
-/* Styles for basic forms
------------------------------------------------------------*/
-
-fieldset 
-{
-    border:1px solid #ddd;
-    padding:0 1.4em 1.4em 1.4em;
-    margin:0 0 1.5em 0;
-}
-
-legend 
-{
-    font-size:1.2em;
-    font-weight: bold;
-}
-
-textarea 
-{
-    min-height: 75px;
-}
-
-.editor-label 
-{
-    margin: 1em 0 0 0;
-}
-
-.editor-field 
-{
-    margin:0.5em 0 0 0;
-}
-
-
-/* Styles for validation helpers
------------------------------------------------------------*/
-.field-validation-error
-{
-    color: #ff0000;
-}
-
-.field-validation-valid
-{
-    display: none;
-}
-
-.input-validation-error
-{
-    border: 1px solid #ff0000;
-    background-color: #ffeeee;
-}
-
-.validation-summary-errors
-{
-    font-weight: bold;
-    color: #ff0000;
-}
-
-.validation-summary-valid
-{
-    display: none;
-}
+article.live{opacity:1;width:400px;height:150px;transition:all 2s;}
+article.live:hover{height:270px;transition:all 1s;}
+article.full{z-index:1;left:0;width:915px;opacity:1;height:350px;transition:all 4s;} 
+article.gone{opacity:0;transition:all 1s;}
+			
+article img{box-shadow:0 1px 2px #000;cursor:pointer;}
+ 
